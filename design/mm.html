@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            color: white;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            background-color: #fff;
+            color: #333;
+            padding: 20px;
+            width: 320px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+
+        h2 {
+            text-align: left;
+            color: whitesmoke;
+            margin-top: 0;
+            font-size: 30px;
+            padding: 0;
+        }
+
+        div {
+            background-color: white;
+            color: #333;
+            padding: 15px;
+            margin: 0;
+            text-align: left;
+            font-size: 20px;
+            border-bottom: 1px solid #ccc;
+            border-radius: 5px 5px 0 0;
+        }
+
+        .adg {
+            border-bottom: 1px solid white;
+        }
+
+        svg {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container" id="container">
+        <h2>crowdfund</h2>
+
+        <svg width="15" height="15" xmlns="http://www.w3.org/2000/svg" id="close">
+            <path d="M11.314 0l2.828 2.828L9.9 7.071l4.243 4.243-2.828 2.828L7.07 9.9l-4.243 4.243L0 11.314 4.242 7.07 0 2.828 2.828 0l4.243 4.242L11.314 0z" fill="#000" fill-rule="evenodd" opacity=".4"/>
+        </svg>
+        <div class="adg">
+            <div>About</div>
+            <div>Discover</div>
+            <div>Get Started</div>
+        </div>
+    </div>
+
+    <script>
+       
+        document.getElementById('close').addEventListener('click', function() {
+            const container = document.getElementById('container').style.display = 'none'
+      
+        });
+    </script>
+</body>
+</html>
